@@ -11,4 +11,12 @@ Game.prototype.selectSquare = function (number){
     throw new Error("Please select a different square, this is already taken!")
   }
 
+Game.prototype.switchPlayer = function(){
+  if (this.currentPlayer === this._players[0]){
+    this.currentPlayer = this._players[1]
+  }else{
+    this.currentPlayer = this._players[0]
+  }
+};
+
 };
