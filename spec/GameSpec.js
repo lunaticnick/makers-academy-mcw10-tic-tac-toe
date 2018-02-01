@@ -41,9 +41,15 @@ describe("Game Logic", function() {
           expect(game.currentPlayer.name).toEqual("John")
       });
 
-      it("After first player claims a square, it the second players\'s turn to play", function() {
+      it("After first player claims a square, it\'s the second players\'s turn to play", function() {
           game.selectSquare(0);
           expect(game.currentPlayer.name).toEqual("John")
+      });
+
+      it("After first player claims a square, the second playercan claim a square of the 3x3 board by marking with O", function() {
+          game.selectSquare(0);
+          game.selectSquare(1);
+          expect(game._board).toEqual(["X", "O", null, null, null, null,  null, null, null]);
       });
 
   });
