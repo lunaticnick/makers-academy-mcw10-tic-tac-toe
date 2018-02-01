@@ -1,4 +1,4 @@
-describe("Player", function() {
+describe("Player Logic", function() {
   var player;
 
 

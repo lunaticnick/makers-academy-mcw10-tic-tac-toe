@@ -34,16 +34,17 @@ So I can play the game
 I don't want to be able to mark a square on the grid that is already marked
 ```
 ```
+As players
+So we can both play
+We want to to be able to take turns
+```
+```
 As a another player
 So I can play
 I want to to be able to mark a square of the grid with an O
 ```
 
-```
-As players
-So we can both play
-We want to to be able to take turns
-```
+
 ```
 As a player
 So I can win the game
