@@ -4,5 +4,4 @@ function Game() {
 
 Game.prototype.selectSquare = function (number){
   this._board[number] = "X"
-
 };
