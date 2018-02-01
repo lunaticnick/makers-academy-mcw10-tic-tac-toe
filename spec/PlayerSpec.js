@@ -3,13 +3,12 @@ describe("Player", function() {
 
 
   beforeEach(function() {
-    player = new Player();
+    player = new Player("Nikolaos");
   });
 
-  it("should be able to play a Song", function() {
-    player.play(song);
-    expect(player.currentlyPlayingSong).toEqual(song);
+  it("should have a name", function() {
+    expect(player.name).toEqual("Nikolaos")
 
-    //demonstrates use of custom matcher
-    expect(player).toBePlaying(song);
   });
+
+});
