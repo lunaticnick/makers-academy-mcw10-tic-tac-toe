@@ -22,7 +22,6 @@ describe("Game Logic", function() {
           expect(game.currentPlayer.name).toEqual("Nikolaos");
       });
 
-
       it("Player can claim a square of the 3x3 board by marking with X", function() {
           game.selectSquare(0);
           expect(game._board).toEqual(["X", null, null, null, null, null,  null, null, null]);
@@ -37,11 +36,16 @@ describe("Game Logic", function() {
 
   describe ("Double Player", function() {
 
-    it("#switchPlayer changes who the current Player is", function() {
-      game.switchPlayer()
-        expect(game.currentPlayer.name).toEqual("John")
-    });
-    
+      it("#switchPlayer changes who the current Player is", function() {
+        game.switchPlayer()
+          expect(game.currentPlayer.name).toEqual("John")
+      });
+
+      it("After first player claims a square, it the second player turn to play", function() {
+          game.selectSquare(0);
+          expect(game.currentPlayer.name).toEqual("John")
+      });
+
   });
 
 
