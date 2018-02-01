@@ -41,7 +41,7 @@ describe("Game Logic", function() {
           expect(game.currentPlayer.name).toEqual("John")
       });
 
-      it("After first player claims a square, it the second player turn to play", function() {
+      it("After first player claims a square, it the second players\'s turn to play", function() {
           game.selectSquare(0);
           expect(game.currentPlayer.name).toEqual("John")
       });

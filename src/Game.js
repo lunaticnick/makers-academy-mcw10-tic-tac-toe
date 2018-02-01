@@ -5,11 +5,14 @@ function Game(playerX, playerO) {
 };
 
 Game.prototype.selectSquare = function (number){
-  if (this._board[number]=== null){
-    this._board[number] = "X"
+  if (this._board[number]=== null)
+  {
+    this._board[number] = "X";
+    this.switchPlayer()
   }else{
     throw new Error("Please select a different square, this is already taken!")
-  }
+  };
+};
 
 Game.prototype.switchPlayer = function(){
   if (this.currentPlayer === this._players[0]){
@@ -17,6 +20,4 @@ Game.prototype.switchPlayer = function(){
   }else{
     this.currentPlayer = this._players[0]
   }
-};
-
 };
