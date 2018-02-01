@@ -16,7 +16,7 @@ The rules of tic-tac-toe are as follows:
 
 Build the business logic for a game of tic tac toe. It should be easy to implement a working game of tic tac toe by combining your code with any user interface, whether web or command line.
 
-##User Stories
+## User Stories
 
 ```
 As a player
@@ -29,15 +29,16 @@ So I can play
 I want to be able to mark a square of the grid with an X
 ```
 ```
-As a another player
-So I can play
-I want to to be able to mark a square of the grid with an O
-```
-```
 As a player
 So I can play the game
 I don't want to be able to mark a square on the grid that is already marked
 ```
+```
+As a another player
+So I can play
+I want to to be able to mark a square of the grid with an O
+```
+
 ```
 As players
 So we can both play
