@@ -3,5 +3,10 @@ function Game() {
 };
 
 Game.prototype.selectSquare = function (number){
+  if (this._board[number]=== null){
   this._board[number] = "X"
+}else {
+  throw new Error("Please select a different square, this is already taken!")
+}
+
 };
